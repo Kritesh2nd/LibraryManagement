@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webtest 0-00</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5045e83b56.js"></script>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <style>
+      .responsivenavbar{display:none;}
+      .timesbtnbox{width:100%;display:flex;justify-content:flex-end;}
+      .timesbtn{height:33px;width:33px;margin:45px 22px 0 0;}
+      .timesicon{border:var(--border);} 
+      .timesbtn:hover{cursor:pointer;}
+      @media only screen and (max-width:450px){
+        .responsivenavbar{display:;width:100%;height:100vh;z-index:100;background:rgba(0,0,0,1);}
+        .res-partnavlistbox{flex-direction:column;margin-top:40px;}
+        .timesbtn{display:block;}
+      }
+      .p1rooms{height:657px;}
+      .homebackground{width:100%;height:100vh;background-size:cover;background-position:center;
+        background-repeat:no-repeat;display:none;}
+      .homebackground1{background-image:url(image/librarybg01.jpg);}
+      .homebackground2{background-image:url(image/librarybg02.jpg);}
+      .homebackground3{background-image:url(image/librarybg03.jpg);}
+      .homebgsecond{width:100%;height:100vh;background-color:#000;opacity:.55;}
+
+      .hometitlebox{text-align:center;padding:45px 0 0 0;display:flex;justify-content:center;}
+      .hometitlelink{text-decoration:none;color:#fff;font-size:24px;font-family:var(--fontfamily01);font-weight:700;
+        letter-spacing: 4px}
+      .barsbtn{height:33px;width:33px;margin-left:40px;display:none;} 
+      .barsbtn:hover{cursor:pointer;}
+      @media only screen and (max-width:450px){
+        .barsbtn{display:block;}
+      }
+
+      .partnavlistbox{list-style-type:none;padding:45px 0 35px 0;display:flex;justify-content:center;}
+      .prt-lii{display:inline;border:var(--borderx);padding:0 20px;}
+      .part-ahrr{text-decoration:none;color:#fff;border:var(--borderx);font-size:15px;transition:.35s;}
+      .part-ahrr:hover{cursor:pointer;color:var(--cyellow);}
+      .navactivate{color:var(--cyellow);}
+      @media only screen and (max-width:450px){
+        .partnavlistbox{display:none;}
+        .prt-lii{display:block;text-align:center;padding:13px 0;}
+      }
+
+      .homepagetxt0{font-family:var(--fontfamily02);color:#fff;font-weight:300;text-align:center;}
+      .homepagetxt1{font-size:50px;padding-top:100px;}
+      .homepagetxt2{font-size:15px;padding-top:24px;}
+      @media only screen and (max-width:450px){
+        .homepagetxt1{font-size:27px;padding:0 25px;padding-top:250px;}
+        .homepagetxt2{font-size:14px;padding:0 25px;padding-top:14px;line-height:25px;}
+      }
+      
+      .bgslidebox{display:flex;justify-content:center;padding:160px 0 0 0;}
+      .slidesbg{height:70px;width:90px;margin:0 12px;}
+      .slidebtnbg{background-color:#000;opacity:.55;transition:.3s;}
+      .slidebtnbg:hover{opacity:.2;cursor:pointer;}
+      .slidesbgimg{border:3px solid #fff;}
+      @media only screen and (max-width:450px){
+        .bgslidebox{display:flex;justify-content:center;padding:80px 0 0 0;}
+        .slidesbg{height:60px;width:80px;margin:0 10px;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "mainbody rel">
+      <div class="homebackground1 homebackground abs"></div>
+      <div class="homebackground2 homebackground abs"></div>
+      <div class="homebackground3 homebackground abs"></div>
+      <div class="homebgsecond abs"></div>
+      <div class="responsivenavbar abs">
+        <div class="timesbtnbox">
+          <div class="timesbtn">
+            <img src="image/cancelwhite.png" alt="" class="timesicon ins">
+          </div>
+        </div>
+        <ul class="res-partnavlistbox">
+          <li class="prt-lii"><a href="" class="part-ahrr navactivate">Home</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">About</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Books</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Services</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">News</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Contact</a></li>
+        </ul>
+      </div>
+      <div class="p1room1 p1rooms rel ">
+        <div class="hometitlebox">
+          <a href="#" class="hometitlelink">PUBLIC LIBRARY</a>
+          <div class="barsbtn">
+            <img src="image/barswhite.png" alt="" class="barsicon ins">
+          </div>
+        </div>
+        <ul class="partnavlistbox">
+          <li class="prt-lii"><a href="" class="part-ahrr navactivate">Home</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">About</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Books</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Services</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">News</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Contact</a></li>
+        </ul>
+        <div class="homepagetxt1 homepagetxt0">
+          CREATE YOUR OWN TUTOR PROFILE FOR FREE
+        </div>
+        <div class="homepagetxt2 homepagetxt0">
+          at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. Typi non
+        </div>
+        <div class="bgslidebox ">
+          <div class="slide1 slidesbg rel">
+            <div class="slidebtnbg ins abs"></div>
+            <img src="image/librarybg01s.jpg" alt="" class="slidesbgimg ins">
+          </div>
+          <div class="slide2 slidesbg rel">
+            <div class="slidebtnbg ins abs"></div>
+            <img src="image/librarybg02s.jpg" alt="" class="slidesbgimg ins">
+          </div>
+          <div class="slide3 slidesbg rel">
+            <div class="slidebtnbg ins abs"></div>
+            <img src="image/librarybg03s.jpg" alt="" class="slidesbgimg ins">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      var slidesbg = document.querySelectorAll(".slidesbg");
+      var homebackground = document.querySelectorAll(".homebackground");
+      var slidebtnbg = document.querySelectorAll(".slidebtnbg");
+      // var barsbtn = document.querySelector(".barsbtn");
+      // var slidebtnbg = document.querySelectorAll(".slidebtnbg");
+      var interval = 5000;var bgimgnum = 0;var carousel;
+      homebackground[0].style.display = "block";
+      slidebtnbg[0].style.opacity = ".2";
+      CarouselActivate();      
+      slidesbg[0].addEventListener("click",()=>{SlideClicked(0);});
+      slidesbg[1].addEventListener("click",()=>{SlideClicked(1);});
+      slidesbg[2].addEventListener("click",()=>{SlideClicked(2);});
+      function CarouselActivate(){carousel = setInterval(CarouselFuns, interval);}
+      function SlideClicked(no){
+        clearInterval(carousel);
+        ChoosenSlideFuns(no);
+        bgimgnum = no;
+        console.log("bgimgnum =",bgimgnum);
+        CarouselActivate();
+      }
+      function CarouselFuns(){
+        if(bgimgnum < 2){bgimgnum++}
+        else{bgimgnum=0;}
+        for(var a=0;a<3;a++){if(a != bgimgnum+1){
+          $(homebackground[a]).fadeOut(700);};
+          slidebtnbg[a].style.opacity = ".55";
+        }
+        $(homebackground[bgimgnum]).fadeIn(800);
+        slidebtnbg[bgimgnum].style.opacity = ".2";
+      }
+      function ChoosenSlideFuns(no){
+        for(var a=0;a<3;a++){
+          if(a != no){$(homebackground[a]).fadeOut(700);}
+          slidebtnbg[a].style.opacity = ".55";
+        }
+        $(homebackground[no]).fadeIn(800);
+        slidebtnbg[no].style.opacity = ".2";
+      }
+
+      var barsbtn = document.querySelector(".barsbtn");
+      var timesbtn = document.querySelector(".timesbtn");
+      var responsivenavbar = document.querySelector(".responsivenavbar");
+      barsbtn.addEventListener('click',()=>{$(responsivenavbar).toggle( "slide", 500 );});
+      timesbtn.addEventListener('click',()=>{$(responsivenavbar).toggle( "slide", 500 );});
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clone C 0-00</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5045e83b56.js"></script>
+    <link rel="stylesheet" href="css/mystyleclone.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class = "mainbody rel">
+      <div class="homebgsecond abs"></div>
+      <div class="responsivenavbar abs">
+        <div class="timesbtnbox">
+          <div class="timesbtn">
+            <img src="image/cancelwhite.png" alt="" class="timesicon ins">
+          </div>
+        </div>
+        <ul class="res-partnavlistbox">
+          <li class="prt-lii"><a href="" class="part-ahrr navactivate">Home</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">About</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Books</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Services</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">News</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Contact</a></li>
+        </ul>
+      </div>
+      <div class="p1room1 p1rooms rel ">
+        <div class="hometitlebox">
+          <a href="#" class="hometitlelink">PUBLIC LIBRARY</a>
+          <div class="barsbtn">
+            <img src="image/barswhite.png" alt="" class="barsicon ins">
+          </div>
+        </div>
+        <ul class="partnavlistbox">
+          <li class="prt-lii"><a href="" class="part-ahrr navactivate">Home</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">About</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Books</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Services</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">News</a></li>
+          <li class="prt-lii"><a href="" class="part-ahrr">Contact</a></li>
+        </ul>
+        <div class="inrp1room1 border"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+
+      var barsbtn = document.querySelector(".barsbtn");
+      var timesbtn = document.querySelector(".timesbtn");
+      var responsivenavbar = document.querySelector(".responsivenavbar");
+      barsbtn.addEventListener('click',()=>{$(responsivenavbar).toggle( "slide", 500 );});
+      timesbtn.addEventListener('click',()=>{$(responsivenavbar).toggle( "slide", 500 );});
+      
+    </script>
+  </body>
+</html>
