@@ -9,14 +9,14 @@
       .responsivenavbar{display:none;}
       .timesbtnbox{width:100%;display:flex;justify-content:flex-end;}
       .timesbtn{height:33px;width:33px;margin:45px 22px 0 0;}
-      .timesicon{border:var(--border);} 
+      .timesicon{border:none;} 
       .timesbtn:hover{cursor:pointer;}
       @media only screen and (max-width:450px){
         .responsivenavbar{display:;width:100%;height:100vh;z-index:100;background:rgba(0,0,0,1);}
         .res-partnavlistbox{flex-direction:column;margin-top:40px;}
         .timesbtn{display:block;}
       }
-      .p1rooms{height:657px;}
+      /* .p1room2{height:657px;} */
       .homebackground{width:100%;height:100vh;background-size:cover;background-position:center;
         background-repeat:no-repeat;display:none;}
       .homebackground1{background-image:url(image/librarybg01.jpg);}
@@ -24,18 +24,20 @@
       .homebackground3{background-image:url(image/librarybg03.jpg);}
       .homebgsecond{width:100%;height:100vh;background-color:#000;opacity:.55;}
 
+      .p1room1{padding-bottom:60px;}
       .hometitlebox{text-align:center;padding:45px 0 0 0;display:flex;justify-content:center;}
       .hometitlelink{text-decoration:none;color:#fff;font-size:24px;font-family:var(--fontfamily01);font-weight:700;
         letter-spacing: 4px}
       .barsbtn{height:33px;width:33px;margin-left:40px;display:none;} 
       .barsbtn:hover{cursor:pointer;}
       @media only screen and (max-width:450px){
+        .p1room1{padding-bottom:30px;}
         .barsbtn{display:block;}
       }
 
       .partnavlistbox{list-style-type:none;padding:45px 0 35px 0;display:flex;justify-content:center;}
-      .prt-lii{display:inline;border:var(--borderx);padding:0 20px;}
-      .part-ahrr{text-decoration:none;color:#fff;border:var(--borderx);font-size:15px;transition:.35s;}
+      .prt-lii{display:inline;padding:0 20px;}
+      .part-ahrr{text-decoration:none;color:#fff;font-size:15px;transition:.35s;}
       .part-ahrr:hover{cursor:pointer;color:var(--cyellow);}
       .navactivate{color:var(--cyellow);}
       @media only screen and (max-width:450px){
@@ -44,14 +46,18 @@
       }
 
       .homepagetxt0{font-family:var(--fontfamily02);color:#fff;font-weight:300;text-align:center;}
+      .homepagetxtbox{height:220px;}
+      .inrhmpgtxtboxs{display:none;top:0;left:0;width:100%;}
+      /* .inrhmpgtxtbox3{display:block;} */
       .homepagetxt1{font-size:50px;padding-top:100px;}
       .homepagetxt2{font-size:15px;padding-top:24px;}
       @media only screen and (max-width:450px){
+        .homepagetxtbox{height:416px;}
         .homepagetxt1{font-size:27px;padding:0 25px;padding-top:250px;}
         .homepagetxt2{font-size:14px;padding:0 25px;padding-top:14px;line-height:25px;}
       }
       
-      .bgslidebox{display:flex;justify-content:center;padding:160px 0 0 0;}
+      .bgslidebox{display:flex;justify-content:center;padding:92px 0 37px 0;}
       .slidesbg{height:70px;width:90px;margin:0 12px;}
       .slidebtnbg{background-color:#000;opacity:.55;transition:.3s;}
       .slidebtnbg:hover{opacity:.2;cursor:pointer;}
@@ -60,6 +66,35 @@
         .bgslidebox{display:flex;justify-content:center;padding:80px 0 0 0;}
         .slidesbg{height:60px;width:80px;margin:0 10px;}
       }
+
+      .p1room2{height:auto;padding-bottom:50px;}
+      .p1r2title{font-family:var(--fontfamily02);text-align:center;font-size:50px;font-weight:300;padding-top:70px;}
+      .aboutuscontentbox{padding:0 90px;}
+      .inrabtuscntbox{padding:45px 0 0 0;}
+      .abtusbox0s{display:flex;justify-content:center;margin-bottom:35px;}
+      .abtusimgbox{width:15%;margin:5px 2% 0 0;display:flex;justify-content:center;}
+      .abtustxtbox{width:83%;}
+
+
+      .abtusimgbox-i{height:64px;width:64px;}
+
+      .aboutuslinks{font-family:var(--fontfamily02);font-size:15px;font-weight:700;text-decoration:none;color:#777;
+        transition:.3s;line-height:30px;}
+      .aboutuslinks:hover{color:var(--cyellow);}
+      .abtustxtbox-i{font-family:var(--fontfamily02);font-size:15px;color:#777;line-height:22px;text-align:justify;}
+
+      @media only screen and (max-width:450px){
+        .p1r2title{font-size:40px;}
+        .aboutuscontentbox{padding:0 30px;}
+        .inrabtuscntbox{padding:30px 0 0 0;}
+        .abtusbox0s{flex-direction:column;}
+        .abtusimgbox{width:100%;}
+        .abtustxtbox{width:100%;padding-top:10px;}
+        .aboutuslinks{padding-top:10px;}
+        .abtustxtbox-i{line-height:22px;}
+      }
+
+      .p1room3{height:657px;}
     </style>
   </head>
   <body>
@@ -83,7 +118,7 @@
           <li class="prt-lii"><a href="" class="part-ahrr">Contact</a></li>
         </ul>
       </div>
-      <div class="p1room1 p1rooms rel ">
+      <div class="p1room1 p1rooms rel">
         <div class="hometitlebox">
           <a href="#" class="hometitlelink">PUBLIC LIBRARY</a>
           <div class="barsbtn">
@@ -98,11 +133,31 @@
           <li class="prt-lii"><a href="" class="part-ahrr">News</a></li>
           <li class="prt-lii"><a href="" class="part-ahrr">Contact</a></li>
         </ul>
-        <div class="homepagetxt1 homepagetxt0">
-          CREATE YOUR OWN TUTOR PROFILE FOR FREE
-        </div>
-        <div class="homepagetxt2 homepagetxt0">
-          at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. Typi non
+        <div class="homepagetxtbox rel">
+          <div class="inrhmpgtxtbox1 inrhmpgtxtboxs abs">
+            <div class="homepagetxt1 homepagetxt0">
+              CREATE YOUR OWN TUTOR PROFILE FOR Free
+            </div>
+            <div class="homepagetxt2 homepagetxt0">
+              at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. Typi non
+            </div>
+          </div>
+          <div class="inrhmpgtxtbox2 inrhmpgtxtboxs abs">
+            <div class="homepagetxt1 homepagetxt0">
+              THE WONDERFUL WORLD OF READING
+            </div>
+            <div class="homepagetxt2 homepagetxt0">
+              at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. Typi non
+            </div>
+          </div>
+          <div class="inrhmpgtxtbox3 inrhmpgtxtboxs abs">
+            <div class="homepagetxt1 homepagetxt0">
+              CREATE YOUR FUTURE WITH US!
+            </div>
+            <div class="homepagetxt2 homepagetxt0">
+              at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. Typi non
+            </div>
+          </div>
         </div>
         <div class="bgslidebox ">
           <div class="slide1 slidesbg rel">
@@ -119,17 +174,74 @@
           </div>
         </div>
       </div>
+      <div class="p1room2 p1rooms rel">
+        <div class="p1r2title">ABOUT US</div>
+        <div class="aboutuscontentbox">
+          <div class="inrabtuscntbox">
+            <div class="abtusbox1 abtusbox0s">
+              <div class="abtusimgbox">
+                <div class="abtusimgbox-i">
+                  <img src="image/books.png" alt="" class="ins">
+                </div>
+              </div>
+              <div class="abtustxtbox">
+                <a href="#" class="aboutuslinks">Join the library</a>
+                <div class="abtustxtbox-i">
+                  Aat vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzelenit augue 
+                  duis dolore te feugait nulla facilisi. Typi non habent claritatem insitam; est usus legentis 
+                  in iis qui facit eorum claritatem vestigationes demonstraverunt lectores legere me lius quo
+                </div>
+              </div>
+            </div>
+            <div class="abtusbox2 abtusbox0s">
+              <div class="abtusimgbox">
+                <div class="abtusimgbox-i">
+                  <img src="image/glasses.png" alt="" class="ins">
+                </div>
+              </div>
+              <div class="abtustxtbox">
+                <a href="#" class="aboutuslinks">Help</a>
+                <div class="abtustxtbox-i">
+                  Secilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum 
+                  zzelenit augue duis dolore te feugait nulla facilisi. Typi non habent claritatem insitam;
+                  est usus legentis in iis qui facit eorum claritatem vestigatio
+                </div>
+              </div>
+            </div>
+            <div class="abtusbox3 abtusbox0s">
+              <div class="abtusimgbox">
+                <div class="abtusimgbox-i">
+                  <img src="image/banner.png" alt="" class="ins">
+                </div>
+              </div>
+              <div class="abtustxtbox">
+                <a href="#" class="aboutuslinks">Ask a librarian</a>
+                <div class="abtustxtbox-i">
+                  Adio dignissim qui blandit praesent luptaum zzelenit augue duis dolore te feugait nulla facilisi. 
+                  Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p1room3 p1rooms rel border">
+
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+      // var barsbtn = document.querySelector(".barsbtn");
+      // var inrhmpgtxtboxs = document.querySelectorAll(".inrhmpgtxtboxs");
+      // ======================= For Carousle ======================= 
       var slidesbg = document.querySelectorAll(".slidesbg");
       var homebackground = document.querySelectorAll(".homebackground");
       var slidebtnbg = document.querySelectorAll(".slidebtnbg");
-      // var barsbtn = document.querySelector(".barsbtn");
-      // var slidebtnbg = document.querySelectorAll(".slidebtnbg");
+      var inrhmpgtxtboxs = document.querySelectorAll(".inrhmpgtxtboxs");
       var interval = 5000;var bgimgnum = 0;var carousel;
       homebackground[0].style.display = "block";
+      inrhmpgtxtboxs[0].style.display = "block";
       slidebtnbg[0].style.opacity = ".2";
       CarouselActivate();      
       slidesbg[0].addEventListener("click",()=>{SlideClicked(0);});
@@ -146,28 +258,40 @@
       function CarouselFuns(){
         if(bgimgnum < 2){bgimgnum++}
         else{bgimgnum=0;}
-        for(var a=0;a<3;a++){if(a != bgimgnum+1){
-          $(homebackground[a]).fadeOut(700);};
+        for(var a=0;a<3;a++){
+          if(a != bgimgnum+1){
+            $(homebackground[a]).fadeOut(700);
+            $(inrhmpgtxtboxs[a]).fadeOut(400);
+          }
           slidebtnbg[a].style.opacity = ".55";
         }
         $(homebackground[bgimgnum]).fadeIn(800);
+        $(inrhmpgtxtboxs[bgimgnum]).fadeIn(1000);
         slidebtnbg[bgimgnum].style.opacity = ".2";
       }
       function ChoosenSlideFuns(no){
         for(var a=0;a<3;a++){
-          if(a != no){$(homebackground[a]).fadeOut(700);}
+          if(a != no){
+            $(homebackground[a]).fadeOut(700);
+            $(inrhmpgtxtboxs[a]).fadeOut(400);
+          }
           slidebtnbg[a].style.opacity = ".55";
         }
         $(homebackground[no]).fadeIn(800);
+        $(inrhmpgtxtboxs[no]).fadeIn(1000);
         slidebtnbg[no].style.opacity = ".2";
       }
-
+      // ======================= For Responssive Navication Bar ======================= 
       var barsbtn = document.querySelector(".barsbtn");
       var timesbtn = document.querySelector(".timesbtn");
       var responsivenavbar = document.querySelector(".responsivenavbar");
       barsbtn.addEventListener('click',()=>{$(responsivenavbar).toggle( "slide", 500 );});
       timesbtn.addEventListener('click',()=>{$(responsivenavbar).toggle( "slide", 500 );});
-      
+    </script>
+    <script>
+      // var barsbtn = document.querySelector(".barsbtn");
+      // var inrhmpgtxtboxs = document.querySelectorAll(".inrhmpgtxtboxs");
+      // =======================  ======================= 
     </script>
   </body>
 </html>
